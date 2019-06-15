@@ -98,3 +98,48 @@ The above error is due to a permissions problem, to fix it just exec following c
 ```shell
 sudo chown -R myuser:myuser ~/.gnupg
 ```
+
+#### 4. Get public key
+
+You will need the public key to store it on github or gitlab if you want sing your commits.
+
+Get gpg keys:
+```shell
+gpg --list-keys
+```
+
+Output:
+```
+/home/myuser/.gnupg/pubring.gpg
+-----------------------------------
+pub   2048R/PUBKEYXX 2019-06-15 [expires: 2020-06-14]
+uid                  Heinrich Heine (Der Dichter) <heinrichh@duesseldorf.de>
+sub   2048R/233XXXXX 2019-06-15 [expires: 2020-06-14]
+```
+
+Get public key:
+```
+gpg --armor --export PUBKEYXX
+```
+
+Output:
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1
+
+6IEdhbGVhbm8gKEdQRyBLZXkgZm9yIFhlcmdpb0FsZVggRGV2T3Bzbyb5laXguDf
+6IEdhbGVhbm8gKEdQRyBLZXkgZm9yIFhlcmdpb0FsZVggRGV2T3Bzbyb5laXguDf
+6IEdhbGVhbm8gKEdQRyBLZXkgZm9yIFhlcmdpb0FsZVggRGV2T3Bzbyb5laXguDf
+...
+6IEdhbGVhbm8gKEdQRyBLZXkgZm9yIFhlcmdpb0FsZVggRGV2T3Bzbyb5laXguDf
+6IEdhbGVhbm8gKEdQRyBLZXkgZm9yIFhlcmdpb0FsZVggRGV2T3Bzbyb5laXguDf
+6IEdhbGVhbm8gKEdQRyBLZXkgZm9yIFhlcmdpb0FsZVggRGV2T3Bzbyb5laXguDf
+9w==
+=qtS2
+-----END PGP PUBLIC KEY BLOCK-----
+```
+
+#### 5. Store GPG Key on Github && GitLab
+
+* Go to [GitHub Settings](https://github.com/settings), then click on `SSH and GPG keys` option at side bar menu. Finally add your key clicking on **New GPG key** button.
+* Go to [GitLab Settings](https://gitlab.com/profile), then click on `GPG Keys` option at side bar menu.
