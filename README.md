@@ -142,4 +142,5 @@ Version: GnuPG v1
 #### 5. Store GPG Key on Github && GitLab
 
 * Go to [GitHub Settings](https://github.com/settings), then click on `SSH and GPG keys` option at side bar menu. Finally add your key clicking on **New GPG key** button.
-* Go to [GitLab Settings](https://gitlab.com/profile), then click on `GPG Keys` option at side bar menu.
+* Go to [GitLab Settings](https://gitlab.com/profile), then click on `GPG Keys` option at side bar menu. Finally add your key clicking on `Add Key`.
+
