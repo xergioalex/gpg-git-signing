@@ -150,5 +150,8 @@ Version: GnuPG v1
 
 Finally it's posible sign your commit using **-S** option:
 ```
-git commit -S -am 'signed commit'
+git commit -S -am "signed commit"
 ```
+
+You will get a verification badge on the label of your commit:
+![GPG Signed Commit](gpg_signed_commit.png)
