@@ -154,4 +154,10 @@ git commit -S -am "signed commit"
 ```
 
 You will get a verification badge on the label of your commit:
-![GPG Signed Commit](gpg_signed_commit.png)
+
+**Github:**
+![GPG Signed GitHub Commit](gpg_signed_github_commit.png)
+
+**GitLab:**
+![GPG Signed GitLab Commit](gpg_signed_gitlab_commit.png)
+
