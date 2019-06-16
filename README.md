@@ -33,7 +33,7 @@ Please select what kind of key you want:
    (4) RSA (sign only)
 Your selection? 1
 RSA keys may be between 1024 and 4096 bits long.
-What keysize do you want? (2048) 
+What keysize do you want? (2048)
 Requested keysize is 2048 bits
 Please specify how long the key should be valid.
          0 = key does not expire
@@ -79,7 +79,7 @@ gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
 gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
 gpg: next trustdb check due at 2020-06-14
 pub   2048R/3423CE33 2019-06-15 [expires: 2020-06-14]
-      Key fingerprint = 432B A5B0 5423 5467 CE00 3333  FCE2 7F45 593F 7110 
+      Key fingerprint = 432B A5B0 5423 5467 CE00 3333  FCE2 7F45 593F 7110
 uid                  Heinrich Heine (Der Dichter) <heinrichh@duesseldorf.de>
 sub   2048R/43564534 2019-06-15 [expires: 2020-06-14]
 ```
@@ -144,3 +144,11 @@ Version: GnuPG v1
 * Go to [GitHub Settings](https://github.com/settings), then click on `SSH and GPG keys` option at side bar menu. Finally add your key clicking on **New GPG key** button.
 * Go to [GitLab Settings](https://gitlab.com/profile), then click on `GPG Keys` option at side bar menu. Finally add your key clicking on `Add Key`.
 
+
+
+#### 6. Sign git commmits
+
+Finally it's posible sign your commit using **-S** option:
+```
+git commit -S -am 'signed commit'
+```
